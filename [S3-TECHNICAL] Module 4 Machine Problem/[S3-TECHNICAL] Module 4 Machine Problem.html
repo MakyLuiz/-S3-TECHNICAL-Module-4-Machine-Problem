@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="Mod4.css">
+</head>
+<body>
+
+  <div id="calculator">
+    <input type="text" id="display">
+    <br>
+    <button id="clear" onclick="clearDisplay()">C</button>
+    <button onclick="backspace()" id="btnBackspace"><</button>
+    <button onclick="setOperator('/')" id="btn/">/</button>
+    <button onclick="setOperator('*')" id="btn*">X</button>
+    <br>
+
+    <button onclick="appendNumber('7')" id="btn7">7</button>
+    <button onclick="appendNumber('8')" id="btn8">8</button>
+    <button onclick="appendNumber('9')" id="btn9">9</button>
+    <button onclick="setOperator('-')" id="btn-">-</button>
+
+    <br>
+    <button onclick="appendNumber('4')" id="btn4">4</button>
+    <button onclick="appendNumber('5')" id="btn5">5</button>
+    <button onclick="appendNumber('6')" id="btn6">6</button>
+    <button onclick="setOperator('+')" id="btn+">+</button>
+    
+    <br>
+    <button onclick="appendNumber('1')" id="btn1">1</button>
+    <button onclick="appendNumber('2')" id="btn2">2</button>
+    <button onclick="appendNumber('3')" id="btn3">3</button>
+    <button onclick="calculate()" id="equals">=</button>
+    
+    <br>
+    <button onclick="appendNumber('0')" id="btn0">0</button>
+    <button onclick="appendDecimal()" id="btnDot">.</button>
+    <br>
+  </div>
+  <script src ="Mod4.js"></script>
+</body>
+</html>
